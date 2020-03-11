@@ -1,0 +1,29 @@
+ *{
+    box-sizing: border-box;
+}
+
+main{
+    margin: 0 auto;
+    width: 960px;
+    text-align: left;
+    color: #626262;
+    margin-top: 60px;
+}
+
+.container ul{
+    margin-bottom: 140px;
+    width: 470px;
+    display: inline-block;
+    text-align: justify;
+    list-style: none;
+}
+.more{
+    text-transform: uppercase;
+    color: #a7a5a5;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: normal;
+} 
+
