@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+ list-style: none;
+}
+
+.clearfix::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.conteiner{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  padding: 0 15px;
+}
+
+
+.logo{
+  float: left;
+  width: 190px;
+  height: 42px;
+  text-decoration: none;
+  color: #555252;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.logo::first-letter{
+  font-family: "Robota Black", sans-serif;
+  color: #1abc9c;
+}
+
+.menu{
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.menu-link:hover{
+  color: #1abc9c;
+}
+
+.menu li:not(:nth-child(6n)){
+  margin-right: 30px;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu-link{
+  font-family: "Open Sans Bold", sans-serif;
+  color: #0f0101;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  width: 475px;
+  height: 23px;
+}
+
+.card {
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  width: 25%;
+}
+
+.card-list {
+  margin:  0 -15px;
+  overflow: hidden;
+}
+  
+
+img {
+  vertical-align: top;
+  height: auto;
+  max-width: 100%;
+}
+
+.card-img {
+  background: #e9f0fd;
+  height: 280px;
+  position: relative;
+}
+
+.card img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.card-name {
+  text-transform: uppercase;
+  height: 26px;
+  padding: 15px;
+}
+
+.card-price {
+  float: right;
+  height: 40px;
+  width: 54px;
+  background-color: rgba(255,255,255,.5);
+  text-align: center;
+}
+
+.card-item {
+  text-decoration: none;
+}
+
+.card-footer {
+  overflow: hidden;
+  color: #fff;
+  background: #323232;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.card-item:hover .card-footer {
+  background: #1abc9c;
+}
+
+.feat{
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  color: #515151;
+}
+
+.feat::after{
+  content: "";
+  display: block;
+  background-color: #1abc9c;
+  width: 165px;
+  height: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  margin-top: 35px;
+}
+
+
+.block{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  float: left;
+  display: block;
+  width: 33.333%; 
+  padding: 0 15px;
+  margin-bottom: 80px;
+  color: #555252;
+  text-align: justify;
+}
+
+.title{
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555252;
+  margin-top: 20px;
+  height: 60px;
+  padding-left: 35px;
+  vertical-align: bottom;
+  text-decoration: none;
+}
+
+.title::after{
+  content: "";
+  display: block;
+  background-color: #1abc9c;
+  width: 165px;
+  height: 7px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 15px;
+} 
+
+
+.block-img{
+  margin-bottom: 20px;
+}
+
+.btn{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4ec6ab;
+  height: 50px;
+  width: 160px;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: auto;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+  display: block;
+}

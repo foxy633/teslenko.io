@@ -15,6 +15,12 @@ main{
     margin-top: 60px;
     text-align: justify;
 }
+main:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+ }
+  
 
 article{
     margin-bottom: 140px;
@@ -34,6 +40,7 @@ article{
 .mainnav ul li a{
     color: #626262;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .mainnav ul li a:hover{
@@ -53,19 +60,24 @@ article{
     font-weight: 300;
     text-transform: uppercase;
     color: #b4ad9e;
+    font-size: 14px;
+    line-height: 1,2;
 }
 
 h2{
     font-family: "Playfair Display", serif;
     font-size: 30px;
-    color: #4d4c4c;
+    color: #626262;
     font-weight: normal;
+    line-height: 1,2;
 }
 
 article p{
     font-family: "Playfair Display", serif;
     color: #626262;
     text-align: justify;
+    font-size: 14px;
+    line-height: 1,2;
 }
 
 button{
@@ -77,9 +89,11 @@ button{
     background-color: white;
     border: 1px solid #626262;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .but{
     width: inherit;
     text-align: center;
+    display: inline-block;
 }
