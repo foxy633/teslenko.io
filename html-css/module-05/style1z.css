@@ -1,0 +1,55 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#header{
+    padding: 40px 15px;
+}
+
+.menu-item{
+   float: left;
+   position: relative; 
+}
+
+.menu-item + .menu-item{
+    margin-left: 20px;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;
+}
+
+.menu-item:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    padding: 10px;
+    border: 1px solid#000;
+    border-radius: 6px;
+    background: yellow;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 400px;
+}
+
+.submenu-item + .submenu-item{
+    padding-top: 10px;
+}

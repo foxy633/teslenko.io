@@ -1,0 +1,240 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+#wrapper{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* Вторая онлайн работа по 6 модулю */
+
+/* @keyframes{
+    from{
+
+    }
+    to{
+
+    }
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+} */
+
+
+@keyframes animation{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes test{
+    0%{
+        top: 0%;
+        left: 20%;
+        height: 200px;
+        width: 200px;
+        background: #000;
+    }
+    20%{
+        top: 50%;
+        left: 50%;
+        height: 300px;
+        width: 150px;
+        background: yellow;
+    }
+    40%{
+        top: 90%;
+        left: 70%;
+        height: 150px;
+        width: 300px;
+        background: red;
+    }
+    60%{
+        top: 40%;
+        left: 100%;
+        height: 400px;
+        width: 400px;
+        background: green;
+    }
+    80%{
+        top: 100%;
+        left: 20%;
+        height: 250px;
+        width: 250px;
+        background: purple;
+    }
+    100%{
+        top: 50%;
+        left: 80%;
+        height: 230px;
+        width: 230px;
+        background: blue;
+    }
+}
+
+
+.item{
+    position: relative;
+    padding: 40px 0;
+    margin-bottom: 50px;
+}
+
+.item h1{
+    transition: transform .3s ease-in-out;
+    transition-property: transform;
+    transition-duration: .3s;
+    transition: ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    /* transform: rotate(80deg); */
+    transform: translateX(-50%) rotate(30deg);
+}
+
+.item h1: hover{
+    transition-delay: .5s;
+    transform: translateX(-50%) rotate(30deg) scale(1.5);
+}
+
+.shadow{
+    color: #ffffff;
+    text-shadow: 6px 6px 1px rgba(255,255,255,.3);
+    padding: 15px;
+    background: #000;
+    box-shadow: inset 4px 4px 12px 12px rgba(255,255,255,.5), 4px 4px 12px 12px rgba(0,0,0,.5);
+    /* box-shadow: 4px 4px 12px 12px rgba(0,0,0,.5); */
+}
+
+.shadow:hover{
+    animation: animation 1s ease-in-out 5 .5s;
+}
+
+.animation{
+    animation: test .9s linear infinite;
+    position: absolute;
+}
+
+
+.row{
+    margin: 0 -15px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 33.333%;
+    padding: 0 15px;
+}
+
+.item:nth-child(1){
+    background: #000000;
+    color: #ffffff;
+}
+
+.item:nth-child(2){
+    background: yellow;
+    flex-grow: 1;
+}
+
+.item:nth-child(3){
+    background-color: red;
+    flex-grow: 1;
+}
+
+.item:nth-child(4){
+    background: blue;
+}
+
+.item:nth-child(5){
+    background: green;
+}
+
+
+
+
+
+
+
+
+/* Первая онлайн работа по 6 модулю */
+
+
+/* .row{
+    margin: 0 -15px;
+} */
+
+/* .list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: flex-end;/ */
+    /*flex-wrap: wrap-reverse;*/
+   /* flex-direction: row-reverse;/*посмотреть с реверсом и без*/
+  /* flex-direction: column;/*вертикальній порядок єлемента*/
+
+  /* align-items: flex-start;выравнены по верху */
+/* align-items: baseline; */
+/* align-content: stretch; */
+
+} 
+
+/* 
+.item{
+    width: 33,333%;
+    padding: 0 15px;
+}
+.item:nth-child(1){
+    background: #000000;
+    color: #ffffff;
+    order: 5;
+    flex-grow: 1;
+}
+.item:nth-child(2){
+    background: yellow;
+    order: 6;
+    flex-grow: 2;
+}
+.item:nth-child(3){
+    background: red;
+    order: 1;
+    flex-grow: 3;
+}
+.item:nth-child(4){
+    background: blue;
+    order: 2;
+}
+.item:nth-child(5){
+    background: green;
+    order: 3;
+} */
