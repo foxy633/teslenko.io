@@ -1,0 +1,401 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.wrapper{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.container{
+    max-width: 1170px;
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active),
+.visually-hidden::before,
+.visually-hidden::after,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo{
+    float: left;
+    text-decoration: none;
+    color: #555252;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 90px;
+}
+
+.logo::first-letter{
+    font-family: "Robota", sans-serif;
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 90px;
+}
+
+.menu-link:hover{
+    color: #1abc9c;
+}
+
+.menu li:not(:nth-child(6n)){
+    margin-right: 30px;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu-link{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #0f0101;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+section.fotoo{
+    max-width: 1600px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section.fotoo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.52);
+}
+
+.city{
+    width: 900px;
+    content: "";
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 70px;
+}
+
+.city-h{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.city-t{
+    float: left;
+    list-style: none;
+}
+
+.city-t li{
+    float: left;
+}
+
+.city-t li + li a::before{
+    content: "/";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.city-t li a:hover{
+    color: #ff7200;
+}
+
+.tour{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.butt-ic1{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 104px;
+    height: 104px;
+    font-size: 100px;
+    background-color:#509d8c;
+    content: "";
+    position: absolute;
+    top: 230px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.butt-ic1:hover{
+    background-color:#1abc9c;
+}
+
+.butt-ic2{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 104px;
+    height: 104px;
+    font-size: 100px;
+    background-color: #509d8c;
+    content: "";
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.butt-ic2:hover{
+    background-color:#1abc9c;
+}
+
+.catalog{
+    background-color: #e9f0fd;
+}
+
+.feat{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 0px;
+    text-decoration: none;
+    color: #282828;
+}
+
+.feat::after {
+    content: "";
+    background-color: #1abc9c ;
+    display: block;
+    height: 7px;
+    width:165px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    margin-top: 35px;
+} 
+
+.catalog-list{
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.card-item:hover .card-footer{
+    background: #1abc9c;
+}
+
+.card-item:hover .hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-item{
+    float: left;
+    width: 255px;
+}
+
+.card-footer-link{
+    text-decoration: none;
+}
+
+.card-item:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+
+.card-img {
+    background: #e9f0fd;
+    width: 255px;
+    height: 280px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    border: 10px solid rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hover ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.hover li + li{
+    padding-left: 5px;
+}
+
+.hover-row{
+    max-width: 310px;
+}
+
+button{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+button:hover{
+    background: #1abc9c;
+    background-color: #1abc9c;
+}
+
+.btn-cart{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 165px;
+    height: 50px;
+    background-color: #323232;
+}
+
+.btn {
+    font-size: 30px;
+}
+
+.pe-7s-cart{
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.btn-cart .text{
+    text-align: center;
+}
+
+.card-footer{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    overflow: hidden;
+    color: #fff;
+    background: #323232;
+    height: 40px;
+    font-size: 18px;
+    width: 255px;
+    line-height: 40px;
+}
+
+.card-name{
+    text-transform: uppercase;
+    padding: 15px;
+    height: 26px;
+}
+.card-price{
+    float: right;
+    height: 40px;
+    width: 54px;
+    background-color: rgba(255,255,255,.5);
+    text-align: center;
+}
+
+.card-item:hover .card-footer {
+    background: #1abc9c;
+}
+
+.fott{
+    background-color: #323232;
+    height: 85px;
+}
+
+.dokan{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fefefe;
+    line-height: 85px;
+}
+
+.dokan p{
+    margin-top: 0px;
+}
+
+.grap{
+    color: #1abc9c;
+}
+
+.dok::after{
+    margin-left: 2px;
+    margin-right: 2px;
+    content: "|";
+}
+
+.dok::before{
+    content: "\A9";
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
