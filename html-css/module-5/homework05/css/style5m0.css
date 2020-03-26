@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden {
 }
 
 section.fotoo{
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 600px;
     background-position: center;
     background-size: cover;
@@ -118,7 +118,7 @@ section.fotoo::before{
     top: 260px;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 .city-h{
@@ -271,6 +271,7 @@ section.fotoo::before{
     left: 0;
     background: rgba(0,0,0,.5);
     border: 10px solid rgba(255, 255, 255, .5);
+    background-clip: padding-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,7 +367,7 @@ button:hover{
     background: #1abc9c;
 }
 
-.fott{
+#footer{
     background-color: #323232;
     height: 85px;
 }
