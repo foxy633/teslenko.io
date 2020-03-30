@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+#wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+#header{
+
+}
+.header-row{
+
+}
+
+.logo{
+
+}
+
+.user-box{
+
+}
+
+.user-list
+
+
+
+
+
+.row{
+    margin: 0 -15px;
+}
+
+.col{
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+}
+
+@media(max-width: 480px){
+    .container{
+        width: 320px;
+    }
+    .col{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        width: 480px;
+    }
+}
