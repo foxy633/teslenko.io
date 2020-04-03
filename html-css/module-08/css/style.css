@@ -1,0 +1,318 @@
+@import url(fonts.css);
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+#wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 30px 0;
+}
+
+.header-row{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.logo a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.user-box{
+    margin-bottom: 120px;
+}
+
+.user-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.user-item{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-item:hover{
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.user-item a{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.user-item + .user-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.banner{
+    height: 540px;
+    background-image: url('../img/background_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feat{
+    text-align: center;
+}
+
+.feat-pe{
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-top: 190px;
+    width: 300px;
+}
+
+.feat-span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.feat-link{
+    display: flex;
+    justify-content: center;
+}
+
+.partners{
+    text-align: center;
+}
+
+.part-pe{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 21,98px;
+    color: #333333;
+    margin: 0;
+    padding-top: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.img{
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-foto{
+    border-radius: 100px;
+    border: 2px solid #fff;
+}
+
+.team-card-img{
+    position: relative;
+}
+
+.social-img{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    left: 170px;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+}
+
+.icon-tv{
+    background-image: url("../img/tv.png");
+}
+.icon-tea{
+    background-image: url("../img/tea_cup.png");
+}
+.icon-zzz{
+    background-image: url("../img/kolba.png");
+}
+.icon-tel{
+    background-image: url("../img/telegram.png");
+}
+
+.team-list{
+    padding: 30px 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 300px;
+}
+
+.team-item{
+    width: 220px;
+}
+
+.card-footer-link{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 13,97px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.card-footer-pe{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13,95px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.part-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn{
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #ff4e50;
+    display: block;
+    width: 230px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 78, 80);
+    margin-bottom: 50px;
+}
+
+.link-btn:hover{
+    display: block;
+    color: #fff;
+    background-color: #ff4e50;
+}
+
+@media(min-width:768px){
+    .container{
+        width: 532px;
+    }
+    .user-box{
+        margin-bottom: 0;
+    }
+    .banner{
+        height: 700px;
+        background-image: url('../img/background_tablet.jpg');
+    }
+    .feat{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .feat-pe{
+        padding: 0;
+    }
+    .team-list{
+        justify-content: space-between;
+        width: 532px;
+    }
+    .feat-span{
+        padding-top: 25px;
+    }
+    .team-item{
+        width: 235px;
+    }
+    .team-item:not(:nth-child(3n)){
+        padding-bottom: 50px;
+    }
+    
+    .header-row{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .social-img{
+        left: 140px;
+    }
+}
+
+@media(min-width:1400px){
+    .container{
+        width: 1000px;
+    }
+    .banner{
+        background-image: url('../img/background.jpg');
+    }
+    .feat{
+        flex-direction: column;
+    }
+    .feat-pe{
+        width: 100%;
+    }
+    .team-list{
+        width: 100%;
+    }
+}
