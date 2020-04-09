@@ -32,12 +32,6 @@ body{
     padding: 30px 0;
 }
 
-.header-row{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
 .logo a{
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -225,10 +219,6 @@ body{
     }
     .feat-span{
         padding-top: 25px;
-    }
-    .header-row{
-        flex-direction: row;
-        justify-content: space-between;
     }
 }
 
