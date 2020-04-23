@@ -287,10 +287,10 @@ fieldset{
     margin-right: auto;
 }
 
-#footer{
+/* #footer{
     height: 70px;
     width: 100%;
-}
+} */
 
 .page-footer{
     display: flex;
