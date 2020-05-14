@@ -1,0 +1,41 @@
+.site-navigation{
+    @include between-flex($type: 'all');
+    @extend %listreset;
+    &__link{
+        @extend %linkreset;
+        color: $white;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        position: relative;
+        line-height: 28px;
+    
+        &:hover, 
+        &:focus{
+            color: $gold;
+        }
+
+        &::after{
+            @include pseudo;
+            background-color: $gold;
+            height: 2px;
+            position: absolute;
+            transition: width .4s linear .1s;
+            bottom: 0;
+            width: 0;
+        }
+
+        &:hover::after{
+            width: 100%;
+        
+        }
+    }
+}
+
+.navigation__icon{
+    display: inline-block;
+    fill: $white;
+
+    &:hover{
+        fill: $gold;
+    } 
+}

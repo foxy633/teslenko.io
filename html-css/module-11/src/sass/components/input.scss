@@ -1,0 +1,37 @@
+.form,
+fieldset{
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="email"]{
+    font-family: $team-font-stack;
+    font-weight: $light;
+    font-style: italic;
+    font-size: 15px;
+    height: 40px;
+    width: 230px;
+    line-height: 100%;
+    border: 2px solid $gray-input;
+    color: $gray-input;
+    padding-left: 15px;
+}
+
+.input[type="email"]::-webkit-input-placeholder{
+    color: $gray-input;
+}
+
+button[type="submit"]{
+    font-weight: $bold;
+    height: 40px;
+    width: 150px;
+    line-height: 100%;
+    background-color: $blue;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid $gray-input;
+    border-style: solid;
+
+}

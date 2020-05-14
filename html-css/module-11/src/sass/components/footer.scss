@@ -1,0 +1,13 @@
+#footer{
+    height: 70px;
+    width: 100%;
+
+    &::before{
+        @include pseudo;
+        background-color: $gray-white;
+        height: 2px;
+        width: 1200px;
+        margin: -2px auto 0;
+    }
+}
+  

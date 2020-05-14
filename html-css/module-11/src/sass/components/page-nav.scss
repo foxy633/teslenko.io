@@ -1,0 +1,10 @@
+.page-nav{
+    @include between-flex('hor');
+    align-items: center;
+    min-height: 100px;
+
+    &__site-navigation{
+        width: 623px;
+    }
+}
+

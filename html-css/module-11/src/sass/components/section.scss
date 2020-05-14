@@ -1,0 +1,38 @@
+.section__list{
+    @include between-flex($type: 'all');
+    @extend %listreset;
+}
+
+.section__title{
+    text-align: center;
+    margin: 0;
+
+    &--feat{
+    font-family: $section-font-stack;
+    font-size: 24px;
+    margin: 0 auto;
+    }
+
+    &--peat{
+        font-weight: $bold;
+        font-size: 30px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-top: 20px;
+
+        &::after{
+            @include pseudo;
+            background-color: $pink;
+            width: 60px;
+            height: 4px;
+            margin: 40px auto 50px;
+        }
+    }
+
+    &--abaut-team{
+        margin: 0 auto;
+        width: 960px;
+        margin-bottom: 90px;
+    }
+}

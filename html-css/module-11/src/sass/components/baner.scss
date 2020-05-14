@@ -1,0 +1,16 @@
+.baner{
+    @include center-flex('all');
+    @extend %bgCover;
+    min-height: 1000px;
+    text-align: center;
+    background-image: linear-gradient(rgba(237,137,137,0.9), rgba(245,219,139,0.9)), 
+                    url('../images/foto/background_bird-min.png'); 
+    background-color: $black;
+}
+
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
+    .baner{
+        background-image: linear-gradient(rgba(237,137,137,0.9), rgba(245,219,139,0.9)), 
+        url('../images/foto/background_bird@2x-min.png'); 
+    }
+}

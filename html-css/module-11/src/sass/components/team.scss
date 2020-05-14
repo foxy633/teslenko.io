@@ -1,0 +1,65 @@
+.team__card{
+    @extend %transition;
+    position: relative;
+
+    &:hover{
+        @extend %transition;
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+
+        & .team__overlay{
+            @extend %transition;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &-footer{
+        @extend %linkreset;
+        margin-top: 20px;
+    }
+}
+
+.team__overlay{
+    @extend %absoluteCover;
+    @include center-flex($type: 'all');
+    background: linear-gradient(rgba(237,137,137,0.9), rgba(245,219,139,0.9)); 
+    visibility: hidden;
+
+    &-icon{
+        @include center-flex($type: 'all');
+        margin-right: 4px;
+        width: 56px;
+        height: 56px;
+        background-color: $gold;
+
+        &:hover{
+            background-color: $pink;
+        }
+    }
+}
+
+.icon{
+    display: inline-block;
+    fill: $pink;
+
+    &:hover{
+        fill: $white;
+    } 
+}
+
+.team__item{
+    @extend %linkreset;
+    &-name{
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+    &-occupation{
+        font-family: $team-font-stack;
+        font-weight: $light;
+        font-size: 15px;
+        color: $gray-lite;
+        margin-bottom: 80px;
+    }
+}

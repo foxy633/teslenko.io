@@ -1,0 +1,15 @@
+.footer__info{
+    &-list{
+        margin-top: 10px
+    }
+
+    &-span::after{
+        content: "\A9";
+        margin-right: 2px;
+    }
+
+    &-span--grap{
+        color: $pink;
+        margin-left: 4px;
+    }
+}
