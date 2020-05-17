@@ -1,0 +1,13 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helper/variables.scss';
+@import 'helper/mixins';
+@import 'helper/placeholders.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+// Components
+@import 'component/container';
+@import 'component/form';
+// @import 'component/';
